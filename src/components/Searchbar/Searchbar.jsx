@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { BsSearch } from 'react-icons/bs';
 import { Component } from 'react';
 import {
   Header,
@@ -34,6 +35,7 @@ class Searchbar extends Component {
       <Header>
         <SearchForm onSubmit={this.formSubmitHandler}>
           <Button type="submit">
+            <BsSearch size="24px" />
             <ButtonLabel>Search</ButtonLabel>
           </Button>
 
